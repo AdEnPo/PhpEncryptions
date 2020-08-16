@@ -1,7 +1,6 @@
 <?php
-    //caesar chiper 3 geriye
-    //rot13 13 ileriye
-    //$chipers = ['No cyrpt','caesar','rot13'];
+    //caesar chiper is 3 backward
+    //rot13 is 13 forward
     $encryptions = array('No Encryption','Caesar','Rot13');
 
     function caesarChipper($thetext) {
@@ -51,7 +50,7 @@
             $text= $_POST['text']; 
             $select= $_POST['select'];
             
-            if (!preg_match("/^[a-zA-Z ]*$/", $text)) {
+            if (!preg_match("/^[a-zA-Z ]*$/", $text)) {//check if text has numbers or characters
                 echo '<div class=colText><div class="warning">';
                     echo 'This Text Includes Some Special Characters. <br>
                     Please Use Only  Letters';
