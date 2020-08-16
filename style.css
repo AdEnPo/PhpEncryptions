@@ -13,6 +13,7 @@
     border: none;
     font-size: 25px;
     resize: none;
+	overflow: auto;
 }
 .colText{
     margin-top: 2%;
